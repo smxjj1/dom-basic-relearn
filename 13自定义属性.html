@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--标签的自定义属性-->
+<div id="box" a="1"></div>
+<script>
+    var box = document.getElementById("box");
+    //console.log(box.id);//标准中有规定的属性 标签里的属性会影响对象中对应的属性
+    //console.log(box.a);//标准中没有规定的属性 标签里的属性无法映射到对象上
+    //box.className = "aaa";//标准中有规定的属性 对象中对属性的设置会影响标签
+    //box.bbbbb = "22222";//标准中没有规定的属性 对象的自定义属性无法映射到标签上
+</script>
+</body>
+</html>

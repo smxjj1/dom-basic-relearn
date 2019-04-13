@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="text" id="txt" value="金融"/><input type="button" value="搜索"/>
+<script>
+    //找人
+    var txt = document.getElementById("txt");
+    //文本框获取焦点后 默认文字要清除
+    txt.onfocus = function () {
+        //txt.value = "";//这里 txt 和 this 指的都是文本框
+        this.value = "";
+    };
+    //文本框失去焦点后 默认文字要加上
+    txt.onblur = function () {
+        this.value = "金融";
+    };
+</script>
+</body>
+</html>

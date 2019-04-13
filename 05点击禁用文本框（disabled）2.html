@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="text" id="txt"/>
+<input type="button" value="按钮" id="btn"/>
+<script>
+    //要求：点击按钮后文本框不能使用
+    //思路：先获取对象（button和text）；然后再给按钮设置onclick属性，将text的disablee属性设为false；
+    var txt = document.getElementById("txt");
+    var btn = document.getElementById("btn");
+    btn.onclick = function () {
+        if (typeof txt.disabled === "true") {
+            typeof  txt.disabled === "false"
+        } else {
+            typeof txt.disabled === "true"
+        }
+    }
+    //进一步拓展：能不能在点击的时候激活文本框
+    /* btn.onclick = function () {
+     if (typeof txt.disabled === "false") {
+     txt.disabled === true
+     } else {
+     txt.disabled === false
+     }
+     }*/
+
+</script>
+</body>
+</html>

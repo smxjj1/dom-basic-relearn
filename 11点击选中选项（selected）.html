@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<select name="" id="">
+    <option value="">A</option>
+    <option value="">B</option>
+    <option value="">C</option>
+    <option value="" id="d">D</option>
+</select>
+<input type="button" value="按钮" id="btn"/>
+<script>
+    //点击按钮 让特定的选项被选中
+    var btn = document.getElementById("btn");
+    var d = document.getElementById("d");
+    console.dir(d);
+    console.log(d.selected);
+    //d.selected = true;
+    btn.onclick = function () {
+        d.selected = true;
+    };
+</script>
+</body>
+</html>

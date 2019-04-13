@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="box">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</div>
+<script>
+    var box = document.getElementById("box");
+    //要求：封装一个函数，使得所有的id的都能兼容，即把innerText变为textContent,或者反之。
+    //思路:将id的名字设置为形参，而且要将改变的值返回给对象当为属性值使用。
+    /*function getInnerAttrubute(element) {
+        if (typeof element.innerText === "string") {
+            return element.innerText;
+        } else {
+            return element.textContent;
+        }
+    }
+    var get = getInnerAttrubute(box)
+    console.log(get);*/
+    //要求：设置任意对象innerText 内容,直接,并不需要更改七内容即可，进一步处理，只需在属性里面更改就行。
+    function setInnerText(element,content){
+        if(typeof element.innerText==="string"){
+            element.innerText=content;
+        }else{
+            element.textContent=content;
+        }
+    }
+    //console.log(setInnerText(box, "aaaa"));
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="box">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</div>
+<script>
+    var box = document.getElementById("box");
+    //console.log(box.innerText);//获取内部文本
+    //console.log(box.textContent);//获取内部文本
+
+    //谷歌 两个都支持
+    //新版的FF 两个都支持
+    //旧版的FF 只支持textContent
+    //新版的IE 两个都支持
+    //旧版的IE 只支持innerText
+
+    //代理检测
+    //能力检测
+
+    if (typeof box.innerText === "string") {
+        console.log(box.innerText);
+    } else {
+        console.log(box.textContent);
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="text"/>
+<input type="text"/>
+<input type="text"/>
+<input type="button" value="按钮" id="btn"/>
+<script>
+    //点击按钮 禁用所有文本框
+    var btn = document.getElementById("btn");
+    btn.onclick = function () {
+        var inputs = document.getElementsByTagName("input");
+        for (var i = 0; i < inputs.length; i++) {
+            var input = inputs[i];
+            if (input.type === "text") {
+                input.disabled = true;//禁用
+            }
+        }
+    };
+</script>
+</body>
+</html>

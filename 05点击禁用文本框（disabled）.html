@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="text" id="txt"/>
+<input type="button" value="按钮" id="btn"/>
+<script>
+    //点击按钮禁用文本框
+    var btn = document.getElementById("btn");
+    var txt = document.getElementById("txt");
+    //console.dir(btn);
+    //btn.disabled = true;//true表示禁用 false表示可用
+    btn.onclick = function () {
+        txt.disabled = true;
+    };
+</script>
+</body>
+</html>
